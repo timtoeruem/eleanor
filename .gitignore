@@ -2,3 +2,5 @@
 __pycache__/
 nextjs-dashboard/.env.vercel
 nextjs-dashboard/_pnpm-lock.yaml
+nextjs-dashboard/.next/*
+nextjs-dashboard/node_modules/
