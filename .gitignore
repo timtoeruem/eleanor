@@ -1,2 +1,4 @@
 .venv/
 __pycache__/
+nextjs-dashboard/.env.vercel
+nextjs-dashboard/_pnpm-lock.yaml
