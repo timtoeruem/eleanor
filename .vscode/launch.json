@@ -6,7 +6,7 @@
     "configurations": [
         {
             "cwd": "${workspaceFolder}\\thinger",
-            "name": "Python: FastAPI",
+            "name": "Python: FastAPIold",
             "type": "debugpy",
             "request": "launch",
             "module": "uvicorn",
@@ -20,6 +20,26 @@
             },
             "args": [
                 "main:app",
+                "--port",
+                "8000"
+            ]
+        },
+        {
+            "name": "Python: FastAPI",
+            "cwd": "${workspaceFolder}\\ellie",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "env": {
+                "db_username": "postgres",
+                "db_password": "secret",
+                "host_server": "localhost",
+                "database_name": "fastapi",
+                "ssl_mode": "prefer",
+                "db_server_port": "5432"
+            },
+            "args": [
+                "api/main:app",
                 "--port",
                 "8000"
             ]
