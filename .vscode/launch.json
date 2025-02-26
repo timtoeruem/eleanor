@@ -4,14 +4,25 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-        
         {
-            "type": "node-terminal",
-            "name": "Run Script: dev",
+            "cwd": "${workspaceFolder}\\thinger",
+            "name": "Python: FastAPI",
+            "type": "debugpy",
             "request": "launch",
-            "command": "npm run dev",
-            "cwd": "${workspaceFolder}\\chat_app"
+            "module": "uvicorn",
+            "env": {
+                "db_username": "postgres",
+                "db_password": "secret",
+                "host_server": "localhost",
+                "database_name": "fastapi",
+                "ssl_mode": "prefer",
+                "db_server_port": "5432"
+            },
+            "args": [
+                "main:app",
+                "--port",
+                "8000"
+            ]
         }
     ]
 }

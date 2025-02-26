@@ -4,3 +4,6 @@ nextjs-dashboard/.env.vercel
 nextjs-dashboard/_pnpm-lock.yaml
 nextjs-dashboard/.next/*
 nextjs-dashboard/node_modules/
+thinger/client_secret_*.apps.googleusercontent.com.json
+thinger/token.json
+thinger/bruno_col
