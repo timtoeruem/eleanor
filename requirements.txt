@@ -1,6 +1,7 @@
 fastapi 
 uvicorn 
 langchain 
+langchain-ollama
 ollama
 google-auth 
 google-auth-oauthlib 

@@ -7,3 +7,5 @@ nextjs-dashboard/node_modules/
 ellie/client_secret_*.apps.googleusercontent.com.json
 ellie/token.json
 ellie/bruno_col
+ellie/ellie.egg-info
+config.json
